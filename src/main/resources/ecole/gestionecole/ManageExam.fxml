@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="manageStudents" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ecole.gestionecole.controller.ManageExamController">
+        <children>
+            <Label layoutX="131.0" layoutY="189.0" prefHeight="23.0" prefWidth="138.0" text="Module's name :" />
+            <TextField fx:id="module" layoutX="284.0" layoutY="188.0" prefHeight="25.0" prefWidth="242.0" promptText="Module's name* " />
+            <Label layoutX="131.0" layoutY="234.0" prefHeight="23.0" prefWidth="138.0" text="Field :" />
+            <TextField fx:id="field1" layoutX="287.0" layoutY="233.0" prefHeight="25.0" prefWidth="242.0" promptText="Field*" />
+            <Label layoutX="131.0" layoutY="275.0" prefHeight="23.0" prefWidth="138.0" text="Grade :" />
+            <TextField fx:id="grade1" layoutX="287.0" layoutY="274.0" prefHeight="25.0" prefWidth="242.0" promptText="Grade*" />
+            <Label layoutX="131.0" layoutY="317.0" prefHeight="23.0" prefWidth="138.0" text="Salle :" />
+            <TextField fx:id="salle1" layoutX="287.0" layoutY="316.0" prefHeight="25.0" prefWidth="242.0" promptText="Salle *" />
+            <Label layoutX="129.0" layoutY="363.0" prefHeight="23.0" prefWidth="138.0" text="Time : " />
+            <TextField fx:id="time1" layoutX="287.0" layoutY="362.0" prefHeight="25.0" prefWidth="242.0" promptText="Time*" />
+            <Label layoutX="129.0" layoutY="410.0" prefHeight="23.0" prefWidth="138.0" text="Date :" />
+            <Label layoutX="129.0" layoutY="457.0" prefHeight="23.0" prefWidth="138.0" text="Responsible" />
+            <TextField fx:id="responsible1" layoutX="287.0" layoutY="456.0" prefHeight="25.0" prefWidth="242.0" promptText="Responsible" />
+            <Pane prefHeight="94.0" prefWidth="900.0" style="-fx-background-color: #e8632b;" stylesheets="@other/css/RegStudent.css">
+                <children>
+                    <Text fill="WHITE" layoutX="319.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GESTION D'EXAMS">
+                        <font>
+                            <Font name="Agency FB" size="50.0" />
+                        </font>
+                    </Text>
+                </children>
+            </Pane>
+            <TextField fx:id="date1" layoutX="287.0" layoutY="409.0" prefHeight="25.0" prefWidth="242.0" promptText="Date*" />
+            <TextField fx:id="empName" layoutX="101.0" layoutY="108.0" prefHeight="38.0" prefWidth="633.0" promptText="search by module" />
+      <JFXButton fx:id="searchbymodule" layoutX="775.0" layoutY="103.0" mnemonicParsing="false" onAction="#searchByModule" prefHeight="38.0" prefWidth="86.0" style="-fx-background-color: #e8632b;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="202.0" layoutY="513.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #e8632b;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="424.0" layoutY="513.0" mnemonicParsing="false" onAction="#btnUpdate" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #e8632b;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnPrint" layoutX="618.0" layoutY="513.0" mnemonicParsing="false" onAction="#btnPrint" prefHeight="38.0" prefWidth="125.0" style="-fx-background-color: #e8632b;" text="Print" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+            <JFXButton id="button" fx:id="Back" layoutX="23.0" layoutY="12.0" onAction="#Back" text=" ">
+                <graphic>
+                    <ImageView fitHeight="64.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #1976D2;">
+                        <image>
+                            <Image url="@other/img/Back.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+        </children>
+    </AnchorPane>

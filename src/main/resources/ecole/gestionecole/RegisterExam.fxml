@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="manageStudents" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ecole.gestionecole.controller.RegisterExamController">
+    <children>
+        <Label layoutX="131.0" layoutY="148.0" prefHeight="23.0" prefWidth="138.0" text="Module's name :" />
+        <TextField fx:id="module" layoutX="287.0" layoutY="148.0" prefHeight="25.0" prefWidth="242.0" promptText="Module's name* " />
+        <Label layoutX="132.0" layoutY="191.0" prefHeight="23.0" prefWidth="138.0" text="Field :" />
+        <TextField fx:id="field1" layoutX="284.0" layoutY="193.0" prefHeight="25.0" prefWidth="242.0" promptText="Field*" />
+        <Label layoutX="129.0" layoutY="232.0" prefHeight="23.0" prefWidth="138.0" text="Grade :" />
+        <TextField fx:id="grade1" layoutX="284.0" layoutY="233.0" prefHeight="25.0" prefWidth="242.0" promptText="Grade*" />
+        <Label layoutX="129.0" layoutY="273.0" prefHeight="23.0" prefWidth="138.0" text="Salle :" />
+        <TextField fx:id="salle1" layoutX="284.0" layoutY="274.0" prefHeight="25.0" prefWidth="242.0" promptText="Salle *" />
+        <Label layoutX="129.0" layoutY="310.0" prefHeight="23.0" prefWidth="138.0" text="Time : " />
+        <TextField fx:id="time1" layoutX="284.0" layoutY="310.0" prefHeight="25.0" prefWidth="242.0" promptText="Time*" />
+        <Label layoutX="129.0" layoutY="353.0" prefHeight="23.0" prefWidth="138.0" text="Date :" />
+        <Label layoutX="129.0" layoutY="396.0" prefHeight="23.0" prefWidth="138.0" text="Responsible" />
+        <TextField fx:id="responsible1" layoutX="287.0" layoutY="396.0" prefHeight="25.0" prefWidth="242.0" promptText="Responsible" />
+        <JFXButton fx:id="btnRegister" layoutX="450.0" layoutY="494.0" onAction="#btnRegister" prefWidth="140.0" style="-fx-background-color: #e8632b;" text="Register" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+            <stylesheets>
+                <URL value="@other/css/RegStudent.css" />
+            </stylesheets>
+        </JFXButton>
+        <JFXButton fx:id="btnReset" layoutX="234.0" layoutY="494.0" onAction="#btnReset" prefWidth="140.0" style="-fx-background-color: #e8632b;" text="Reset" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+            <stylesheets>
+                <URL value="@other/css/RegStudent.css" />
+            </stylesheets>
+        </JFXButton>
+        <Pane prefHeight="94.0" prefWidth="900.0" style="-fx-background-color: #e8632b;" stylesheets="@other/css/RegStudent.css">
+            <children>
+                <Text fill="WHITE" layoutX="293.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GESTION D'EXAM">
+                    <font>
+                        <Font name="Agency FB" size="50.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <TextField fx:id="date1" layoutX="284.0" layoutY="352.0" prefHeight="25.0" prefWidth="242.0" promptText="Date*" />
+        <JFXButton id="button" fx:id="Back" layoutX="19.0" layoutY="11.0" onAction="#Back" text=" ">
+            <graphic>
+                <ImageView fitHeight="64.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #1976D2;">
+                    <image>
+                        <Image url="@other/img/Back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+    </children>
+</AnchorPane>
